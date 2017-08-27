@@ -7,23 +7,45 @@
 //
 
 #import "ViewController.h"
+#import "PopoverViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UIPopoverPresentationControllerDelegate>
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+- (IBAction)normalButtonClicked:(UIButton *)sender
+{
+    PopoverViewController *popVC = [[PopoverViewController alloc] init];
+    popVC.popTitle = @"My anchor is normal button!";
+    popVC.modalPresentationStyle = UIModalPresentationPopover;
+    
+    UIPopoverPresentationController *popover = popVC.popoverPresentationController;
+    popover.sourceView = sender;
+    popover.sourceRect = sender.bounds;
+    popover.delegate = self;
+    
+    [self presentViewController:popVC animated:YES completion:nil];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)barButtonClicked:(UIBarButtonItem *)sender
+{
+    PopoverViewController *popVC = [[PopoverViewController alloc] init];
+    popVC.popTitle = @"My anchor is bar button!";
+    popVC.modalPresentationStyle = UIModalPresentationPopover;
+    
+    UIPopoverPresentationController *popover = popVC.popoverPresentationController;
+    popover.barButtonItem = sender;
+    popover.delegate = self;
+    
+    [self presentViewController:popVC animated:YES completion:nil];
 }
 
+- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller
+{
+    return UIModalPresentationNone;
+}
 
 @end

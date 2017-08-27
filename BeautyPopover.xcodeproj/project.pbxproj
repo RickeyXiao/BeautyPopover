@@ -13,6 +13,7 @@
 		746F05AC1F5304CD0038741B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 746F05AA1F5304CD0038741B /* Main.storyboard */; };
 		746F05AE1F5304CD0038741B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 746F05AD1F5304CD0038741B /* Assets.xcassets */; };
 		746F05B11F5304CD0038741B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 746F05AF1F5304CD0038741B /* LaunchScreen.storyboard */; };
+		746F05BA1F5307A10038741B /* PopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 746F05B91F5307A10038741B /* PopoverViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		746F05AD1F5304CD0038741B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		746F05B01F5304CD0038741B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		746F05B21F5304CD0038741B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		746F05B81F5307A10038741B /* PopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverViewController.h; sourceTree = "<group>"; };
+		746F05B91F5307A10038741B /* PopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 				746F05AA1F5304CD0038741B /* Main.storyboard */,
 				746F05A71F5304CD0038741B /* ViewController.h */,
 				746F05A81F5304CD0038741B /* ViewController.m */,
+				746F05B81F5307A10038741B /* PopoverViewController.h */,
+				746F05B91F5307A10038741B /* PopoverViewController.m */,
 				746F05A11F5304CD0038741B /* Supporting Files */,
 			);
 			path = BeautyPopover;
@@ -150,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				746F05BA1F5307A10038741B /* PopoverViewController.m in Sources */,
 				746F05A91F5304CD0038741B /* ViewController.m in Sources */,
 				746F05A61F5304CD0038741B /* AppDelegate.m in Sources */,
 				746F05A31F5304CD0038741B /* main.m in Sources */,
